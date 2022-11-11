@@ -1,0 +1,7 @@
+#Project files
+[Bb]uild/
+target/
+build
+build/
+build/*
+target/*
