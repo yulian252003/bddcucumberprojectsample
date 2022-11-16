@@ -7,7 +7,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 //import com.cucumberpom.utils.Constants;
 
 public class BaseTest 
@@ -33,9 +35,15 @@ public class BaseTest
 		String browser = prop.getProperty("browser");
 		if(browser.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver",
-				    System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+	        options.addArguments("disable-gpu");
+	        driver = new ChromeDriver(options);
+				//    System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
+			//driver = new ChromeDriver();
+			//WebDriverManager.chromedriver().setup();
+			//driver = new ChromeDriver();
 		}
 		else 
 		{

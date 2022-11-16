@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="65.298195">
-    <testcase classname="Test Free CRM Web Application" name="Verify Application Landing Page" time="10.897516">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="76.899405">
+    <testcase classname="Test Free CRM Web Application" name="Verify Application Landing Page" time="20.875176">
         <system-out>
             <![CDATA[Given User is on Application Landing Page...................................passed
 Then Verify user is on Application Landing Page.............................passed
@@ -9,7 +9,7 @@ Then Verify user is on the Loggin Area......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Test Free CRM Web Application" name="Application Login" time="19.415058">
+    <testcase classname="Test Free CRM Web Application" name="Application Login" time="19.872718">
         <system-out>
             <![CDATA[Given User is on Application Landing Page...................................passed
 Then User enters the Loggin Area............................................passed
@@ -18,7 +18,7 @@ Then Verify User is on Application Home.....................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Test Free CRM Web Application" name="Create New Contact in Application" time="34.985621">
+    <testcase classname="Test Free CRM Web Application" name="Create New Contact in Application" time="36.151511">
         <system-out>
             <![CDATA[Given User is on Application Landing Page...................................passed
 Then User enters the Loggin Area............................................passed
