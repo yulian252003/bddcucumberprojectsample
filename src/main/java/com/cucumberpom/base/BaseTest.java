@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 //import com.cucumberpom.utils.Constants;
 
 public class BaseTest 
@@ -21,7 +21,7 @@ public class BaseTest
 	{
 		prop = new Properties();
 		try {
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\java\\com\\cucumberpom\\config\\config.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/test/java/com/cucumberpom/config/config.properties");
 			prop.load(fis);
 		     } 
 		catch (IOException e)
