@@ -40,11 +40,7 @@ public class BaseTest
 			options.addArguments("headless");
 	        options.addArguments("disable-gpu");
 	        driver = new ChromeDriver(options);
-	        driver.get("https://www.freecrm.com");
-				//    System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
-			//driver = new ChromeDriver();
-			//WebDriverManager.chromedriver().setup();
-			//driver = new ChromeDriver();
+	    
 		}
 		else 
 		{
