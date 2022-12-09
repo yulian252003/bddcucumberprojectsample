@@ -61,6 +61,7 @@ public class LoginSteps extends BaseTest
 		  String actualTittle = loginPage.getTitle();
 	    	String expectedTitle = "Cogmento CRM";
 	    	Assert.assertEquals(expectedTitle, actualTittle);
+	    	
 	    }
     
     @Then("^Login FreeCRM Application$")

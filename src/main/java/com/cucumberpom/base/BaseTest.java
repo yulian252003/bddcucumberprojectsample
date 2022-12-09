@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-//import io.github.bonigarcia.wdm.WebDriverManager;
-//import com.cucumberpom.utils.Constants;
+
 
 public class BaseTest 
 {
@@ -39,6 +39,16 @@ public class BaseTest
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 	        options.addArguments("disable-gpu");
+	        
+	        options.addArguments("enable-automation");
+	        options.addArguments("--headless");
+	        options.addArguments("--window-size=1920,1080");
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-extensions");
+	        options.addArguments("--dns-prefetch-disable");
+	        options.addArguments("--disable-gpu");
+	        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+	        
 	        driver = new ChromeDriver(options);
 	    
 		}
@@ -47,9 +57,7 @@ public class BaseTest
 			System.out.println("Chrome was not defined in Configuration");
 		}
 		driver.manage().window().maximize();
-		//driver.manage().timeouts().implicitlyWait(Constants.IMPLICITLY_WAIT, TimeUnit.SECONDS);
-		//driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-	
+		
 	}
 	
 	
