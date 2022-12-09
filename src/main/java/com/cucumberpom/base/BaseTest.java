@@ -39,28 +39,18 @@ public class BaseTest
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 	        options.addArguments("disable-gpu");
-	        
 	        options.addArguments("enable-automation");
-	        options.addArguments("--headless");
 	        options.addArguments("--window-size=1920,1080");
 	        options.addArguments("--no-sandbox");
 	        options.addArguments("--disable-extensions");
 	        options.addArguments("--dns-prefetch-disable");
-	        options.addArguments("--disable-gpu");
-	        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 	        
 	        driver = new ChromeDriver(options);
 	    
-		}
-		else 
-		{
-			System.out.println("Chrome was not defined in Configuration");
-		}
-		driver.manage().window().maximize();
 		
 	}
 	
-	
+	}
 	
 
 }
