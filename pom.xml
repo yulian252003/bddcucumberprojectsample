@@ -13,13 +13,6 @@
 
 	<dependencies>
 
-		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.10.19</version>
-			<scope>test</scope>
-		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 		<dependency>
@@ -53,7 +46,6 @@
 			<type>pom</type>
 		</dependency>
 
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -85,9 +77,6 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-
-
-
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -129,7 +118,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+          <version>3.0.0-M7</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
