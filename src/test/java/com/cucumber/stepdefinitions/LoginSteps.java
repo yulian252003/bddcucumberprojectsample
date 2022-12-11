@@ -5,12 +5,12 @@ package com.cucumber.stepdefinitions;
 import com.cucumberpom.base.BaseTest;
 import com.cucumberpom.pages.HomePage;
 import com.cucumberpom.pages.LoginPage;
+
 import org.junit.Assert;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-//import junit.framework.Assert;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.*;
+import io.cucumber.java.en.*;
 
 public class LoginSteps extends BaseTest
 {

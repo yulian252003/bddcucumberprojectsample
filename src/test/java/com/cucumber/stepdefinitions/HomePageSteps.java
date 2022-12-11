@@ -6,7 +6,7 @@ import com.cucumberpom.base.BaseTest;
 import com.cucumberpom.pages.ContactsPage;
 import com.cucumberpom.pages.HomePage;
 
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Then;
 
 public class HomePageSteps extends BaseTest
 {
