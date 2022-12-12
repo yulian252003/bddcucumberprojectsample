@@ -43,6 +43,7 @@ public class BaseTest
 			  options.addArguments("start-maximized");
 			  options.addArguments("--disable-gpu");
 			  options.addArguments("--disable-setuid-sandbox");
+			 
 	        
 	        driver = new ChromeDriver(options);
 	    
