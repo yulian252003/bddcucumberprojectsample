@@ -24,6 +24,7 @@ public class LoginSteps extends BaseTest
 	public void tearDown()
 	{
 		driver.close();
+		driver.quit();
 	}
 	
 	LoginPage loginPage;
@@ -61,7 +62,7 @@ public class LoginSteps extends BaseTest
 		  String actualTittle = loginPage.getTitle();
 	    	String expectedTitle = "Cogmento CRM";
 	    	Assert.assertEquals(expectedTitle, actualTittle);
-	    	
+	    
 	    }
     
     @Then("^Login FreeCRM Application$")

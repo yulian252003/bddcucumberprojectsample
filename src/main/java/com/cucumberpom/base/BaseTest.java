@@ -39,12 +39,13 @@ public class BaseTest
 			  options.addArguments("--headless");
 			  options.addArguments("--window-size=1280x800");
 			  options.addArguments("--disable-dev-shm-usage");
-			  options.addArguments("start-maximized");
+			  options.addArguments("--start-maximized");
 			  options.addArguments("--disable-gpu");
 			  options.addArguments("--disable-setuid-sandbox");
 			 
 	        
 	        driver = new ChromeDriver(options);
+	       
 	    
 		
 	}
