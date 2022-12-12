@@ -35,11 +35,10 @@ public class BaseTest
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			  options.addArguments("--headless");
+			  options.addArguments("--start-maximized");
 			  options.addArguments("--window-size=1920x1080");
 			  options.addArguments("--disable-dev-shm-usage");
-			  options.addArguments("--start-maximized");
-			  options.addArguments("--disable-gpu");
-			  options.addArguments("--disable-setuid-sandbox");
+			  options.addArguments("--no-sandbox");
 	          driver = new ChromeDriver(options);
 	
 	}
