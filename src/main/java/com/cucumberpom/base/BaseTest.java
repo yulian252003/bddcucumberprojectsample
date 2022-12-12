@@ -31,9 +31,7 @@ public class BaseTest
 	
 	public static void initBrowser()
 	{
-		String browser = prop.getProperty("browser");
-		if(browser.equalsIgnoreCase("chrome"))
-		{
+		
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			  options.addArguments("--headless");
@@ -42,15 +40,11 @@ public class BaseTest
 			  options.addArguments("--start-maximized");
 			  options.addArguments("--disable-gpu");
 			  options.addArguments("--disable-setuid-sandbox");
-			 
-	        
-	        driver = new ChromeDriver(options);
-	       
-	    
-		
+	          driver = new ChromeDriver(options);
+	
 	}
 	
 	}
 	
 
-}
+
