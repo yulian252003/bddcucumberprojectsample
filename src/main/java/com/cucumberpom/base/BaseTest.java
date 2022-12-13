@@ -40,6 +40,8 @@ public class BaseTest
 			  options.addArguments("--disable-dev-shm-usage");
 			  options.addArguments("--no-sandbox");
 	          driver = new ChromeDriver(options);
+	          
+	          
 	
 	}
 	

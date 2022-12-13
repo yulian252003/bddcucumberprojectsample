@@ -24,7 +24,7 @@ public class LoginSteps extends BaseTest
 	public void tearDown()
 	{
 		driver.close();
-		driver.quit();
+		
 	}
 	
 	LoginPage loginPage;
