@@ -39,6 +39,7 @@ public class BaseTest
 			  options.addArguments("--window-size=1920x1080");
 			  options.addArguments("--disable-dev-shm-usage");
 			  options.addArguments("--disable-extensions");
+			  options.addArguments("--disable-gpu");
 			  options.addArguments("--no-sandbox");
 	          driver = new ChromeDriver(options);
 	          
