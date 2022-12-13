@@ -42,6 +42,7 @@ public class BaseTest
 			  options.addArguments("--disable-extensions");
 			  options.addArguments("--disable-gpu");
 			  options.addArguments("--no-sandbox");
+			  options.addArguments("--disable-setuid-sandbox");
 	          driver = new ChromeDriver(options);
 	          
 	          
