@@ -13,8 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		         dryRun = false,
 		         monochrome = true,
 		         strict = true
-		        // tags = {"@SmokeTest", "@Ent2End"} AND
-		        // tags = {"@SmokeTest, @Ent2End"} //OR
+		  
                 )
 
 public class TestRunner {

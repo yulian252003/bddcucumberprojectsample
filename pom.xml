@@ -13,8 +13,6 @@
 
 	<dependencies>
 
-
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -56,14 +54,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.0.0</version>
-		</dependency>
-
-	
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>4.1.6.RELEASE</version>
+			<version>3.141.59</version>
 		</dependency>
 
 	</dependencies>
