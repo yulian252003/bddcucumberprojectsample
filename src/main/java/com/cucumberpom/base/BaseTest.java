@@ -8,7 +8,6 @@ import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.CapabilityType;
 
 
 
@@ -35,7 +34,6 @@ public class BaseTest
 		
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			ChromeOptions options = new ChromeOptions();
-			  options.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 			  options.addArguments("--headless");
 			  options.addArguments("--remote-debugging-port=9222");
 			  options.addArguments("--start-maximized");
