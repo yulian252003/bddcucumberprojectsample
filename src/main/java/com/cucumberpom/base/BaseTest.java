@@ -35,7 +35,6 @@ public class BaseTest
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			  options.addArguments("--headless");
-			  options.addArguments("--remote-debugging-port=9222");
 			  options.addArguments("--start-maximized");
 			  options.addArguments("--window-position=0,0");
 			  options.addArguments("--window-size=1920x1080");
@@ -52,5 +51,4 @@ public class BaseTest
 	
 	}
 	
-
 
