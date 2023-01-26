@@ -8,7 +8,7 @@ import com.cucumberpom.base.BaseTest;
 
 public class LoginPage extends BaseTest
 {
-	@FindBy(linkText = "Login")
+	@FindBy(css = ".btn.btn-primary.btn-xs-2.btn-shadow.btn-rect.btn-icon.btn-icon-left")
 	WebElement loginAreaBtn; // this button opens the login area.
 	
 	@FindBy(name = "email")

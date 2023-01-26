@@ -19,30 +19,25 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>6.10.2</version>
 		</dependency>
-	
+	<dependency>
+<groupId>io.github.bonigarcia</groupId>
+<artifactId>webdrivermanager</artifactId>
+<version>5.3.0</version>
+</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>6.10.2</version>
+			<version>5.7.0</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+		
 		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-jvm</artifactId>
-			<version>6.10.2</version>
-			<type>pom</type>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
-		<dependency>
-			<groupId>net.masterthought</groupId>
-			<artifactId>cucumber-reporting</artifactId>
-			<version>5.6.0</version>
-		</dependency>
-
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-core</artifactId>
+<version>5.7.0</version>
+</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -56,29 +51,91 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.32</version>
-		</dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-picocontainer</artifactId>
+<version>5.7.0</version>
+<scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>23.0.0</version>
+</dependency>
+
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>7.3.4</version>
+    <type>pom</type>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-expressions -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-expressions</artifactId>
+    <version>16.0.0</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber5-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber5-adapter</artifactId>
+    <version>2.14.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
+
+
+
+<!--  <scope>test</scope>  -->
+<dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-testng</artifactId>
+<version>7.1.0</version>
+</dependency>
+
+<dependency>
+<groupId>org.testng</groupId>
+<artifactId>testng</artifactId>
+<version>7.4.0</version>
+</dependency>
+<!--  <scope>test</scope>  -->
+
+
 
 
 	</dependencies>
 
 	<build>
+		
 		<pluginManagement>
 			<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 			<plugins>
 
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M5</version>
+					<version>3.0.0-M7</version>
+					<configuration>
+                    <includes>**/*Runner.java</includes>
+                    </configuration>
 				</plugin>
 
 			</plugins>
 		</pluginManagement>
+		
 	</build>
 
 </project>

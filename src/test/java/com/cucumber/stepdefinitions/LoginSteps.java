@@ -5,8 +5,8 @@ package com.cucumber.stepdefinitions;
 import com.cucumberpom.base.BaseTest;
 import com.cucumberpom.pages.HomePage;
 import com.cucumberpom.pages.LoginPage;
-
 import org.junit.Assert;
+//import org.testng.Assert;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.*;
@@ -29,6 +29,7 @@ public class LoginSteps extends BaseTest
 	
 	LoginPage loginPage;
 	HomePage homePage;
+	Hooks hook;
 	
 	@Given("^User is on Application Landing Page$")
 	public void user_is_on_Application_Landing_Page() 	
@@ -36,6 +37,7 @@ public class LoginSteps extends BaseTest
 		String url = prop.getProperty("applicationUrl");
 		driver.get(url);
 		loginPage = new LoginPage();
+		
 	}
 	
 
@@ -44,8 +46,9 @@ public class LoginSteps extends BaseTest
     public void verify_user_is_on_Application_Landing_Page()
     {
     	String actualTittle = loginPage.getTitle();
-    	String expectedTitle = "Free CRM with Free calling and auto dialing features";
+    	String expectedTitle = "Free CRM Software for every business";
     	Assert.assertEquals(expectedTitle, actualTittle);
+    	
     }
 	
 	  @Then("^User enters the Loggin Area$")
